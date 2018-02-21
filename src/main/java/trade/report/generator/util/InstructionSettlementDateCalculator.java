@@ -1,13 +1,12 @@
-package trade.report.settlement.calculator;
+package trade.report.generator.util;
+
+import static trade.report.generator.util.Constants.*;
 
 import java.time.LocalDate;
 import java.util.Currency;
 import java.util.Set;
 
 import trade.report.generator.model.Instruction;
-import trade.report.settlement.util.ArabSettlementDateCalculator;
-import trade.report.settlement.util.DefaultSettlementDateCalculator;
-import trade.report.settlement.util.SettlementDateCalculator;
 
 public class InstructionSettlementDateCalculator {
 
@@ -49,8 +48,8 @@ public class InstructionSettlementDateCalculator {
 	 */
 	private static SettlementDateCalculator getSettlementDateCalculator(Currency currency) {
 		String currencyType=currency.getCurrencyCode();
-		if (currencyType.equals("AED")|| currencyType.equals("SAR")) {
-			return new ArabSettlementDateCalculator();
+		if (currencyType.equals(AED)|| currencyType.equals(SAR)) {
+			return new SpecialCaseSettlementDateCalculator();
 		}
 		return new DefaultSettlementDateCalculator();
 	}

@@ -1,11 +1,11 @@
 package trade.report.generator.main;
 
-import trade.report.generator.report.ReportGeneratorImpl;
-import trade.report.generator.util.SampleDataProvider;
+import trade.report.generator.ReportGeneratorImpl;
+import trade.report.generator.sample.data.SampleDataProvider;
 
 /**
  *  Main class for the trade report generation
- *  It takes the data from the SampleDataProvider
+ *  makes use of data from the SampleDataProvider
  */
 public class TradeReportGeneratorApplication 
 {

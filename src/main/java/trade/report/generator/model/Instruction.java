@@ -16,7 +16,6 @@ public class Instruction {
 	private final LocalDate instructionDate;
 
 	// The Date on which the client wished for the instruction to be settled
-	// with respect to Instruction LocalDate
 	private LocalDate settlementDate;
 	// Type of currency
 	private final Currency currency;

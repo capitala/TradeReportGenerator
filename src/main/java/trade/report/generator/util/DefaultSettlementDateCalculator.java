@@ -1,4 +1,4 @@
-package trade.report.settlement.util;
+package trade.report.generator.util;
 
 import java.time.DayOfWeek;
 

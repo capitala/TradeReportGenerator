@@ -1,10 +1,10 @@
-package trade.report.settlement.util;
+package trade.report.generator.util;
 
 import java.time.DayOfWeek;
 
-public class ArabSettlementDateCalculator extends SettlementDateCalculator{
+public class SpecialCaseSettlementDateCalculator extends SettlementDateCalculator{
 
-    public ArabSettlementDateCalculator() {
+    public SpecialCaseSettlementDateCalculator() {
         super();
     }
 	/**

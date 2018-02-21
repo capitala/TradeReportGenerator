@@ -1,18 +1,29 @@
 package trade.report.generator.entity;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 
 public class FinancialEntity {
-
+	// A financial entity whose shares are to be bought or sold
 	private final String entity;
+	//Settlement date
 	private final LocalDate date;
+	//Rank for the date
 	private final int rank;
+	//Trade amount for the date
+	private final BigDecimal tradeAmount;
 	
-	public FinancialEntity(int rank, String entity, LocalDate date) {
+	public FinancialEntity(int rank, String entity, LocalDate date,BigDecimal tradeAmount) {
 		this.rank = rank;
 		this.entity = entity;
 		this.date = date;
+		this.tradeAmount=tradeAmount;
+	}
+
+
+	public BigDecimal getTradeAmount() {
+		return tradeAmount;
 	}
 
 

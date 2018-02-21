@@ -1,4 +1,4 @@
-package trade.report.generator.report;
+package trade.report.generator;
 
 import java.util.Set;
 

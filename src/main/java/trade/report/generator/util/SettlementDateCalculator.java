@@ -1,4 +1,4 @@
-package trade.report.settlement.util;
+package trade.report.generator.util;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -19,7 +19,7 @@ public abstract class SettlementDateCalculator {
 	}
 
 	/**
-	 * Method to return the avaialable settlement date as per the date provided in
+	 * Method to return the available settlement date as per the date provided in
 	 * the instruction for settlement
 	 * 
 	 * @param date
